@@ -1,0 +1,20 @@
+if gg.isVisible(true) then
+gg.setVisible(false)
+end
+::menu::
+luachon={'pay pet nhe','thoát'}
+mainmenu = gg.choice(luachon,nil,'hack của lamhoc')
+if mainmenu == 1 then goto paypet end
+if mainmenu == 2 then goto thoat end
+if mainmenu == nil then goto thoat end
+::paypet::
+gg.clearResults()
+gg.searchNumber('0.1',gg.TYPE_FLOAT,false,
+gg.SIGN_EQUAL)
+gg.toast('hack đã được chạy')
+gg.alert ('bản quyền của lamhoc')
+goto menu
+::thoat::
+gg.alert('thoat vui ve nhe')
+printf(' cảm ơn bạn đã test hack của lamhoc')
+os.exit()
